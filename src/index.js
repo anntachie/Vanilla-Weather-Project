@@ -5,11 +5,13 @@ function displayTemperature(response)
     let humidityElement = document.querySelector("#humidity");
     let descriptionElement = document.querySelector("#description");
     let temperature = Math.round(response.data.temperature.current);
+    let icon = document.querySelector("#icon")
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
     temperatureElement.innerHTML= temperature;
     windElement.innerHTML= `${response.data.wind.speed}km/h`;
     humidityElement.innerHTML= `${response.data.temperature.humidity}%`;
+    icon.innerHTML=`<img src="${response.data.condition.icon_url}" class="emoji"/>`;
     
 }
 
