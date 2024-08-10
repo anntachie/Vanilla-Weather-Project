@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+ <div class="app">
     <header>
-    <h1>Welcome to Vanilla Weather</h1>
-    <input type="text" placeholder="Enter a city...">
-    <input type="submit" value="Search">
+    <form>
+    <input type="text" placeholder="Enter a city..." required class="search-form-input">
+    <input type="submit" value="Search" class="search-form-button">
+</form>
 </header>
-
+<div class="main">
 <section>
     <div class="container">
         <div class="city">
             <h1>Paris</h1>
-            <div> Thursday 6:08, clear sky <br>
-            Humidity: 39%, Wind: 4.63km/h</div>
+            <div class="forecast"> <span id="current-date">Thursday 6:08,</span> clear sky <br>
+            Humidity: <strong>39%</strong>, Wind:<strong> 4.63km/h</strong></div>
         </div>
-        <div class="temperature">26ºC</div>
+        <div class="temperature"><span class="emoji">☀️</span>26<span class="celsius">ºC</span> </div>
     </div>
 </section>
-    <footer> Coded by <a href="https://github.com/anntachie" target="_blank">ANN </a> code hosted on <a href="https://github.com/" target="_blank">Github</a>, open-sourced on <a href="https://www.netlify.com/" target="_blank">Netlify</a></footer>
+</div>
+
+    <footer> Coded by <a href="https://github.com/anntachie" target="_blank">Ann, </a> is <a href="https://github.com/" target="_blank">open-sourced on Github</a> and <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a></footer>
+    <link rel="stylesheet" href="src/index.js">
+</div>
 </body>
 </html>
