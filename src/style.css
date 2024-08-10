@@ -87,3 +87,22 @@ color: rgba(0, 0, 0, 0.6);}
 a{color: #885DF1;}
 
 
+.weather-forecast-temperatures{display: flex;
+justify-content: center;
+text-align: center;
+color: #F65282;
+margin-top: 25px;}
+
+.weather-forecast-icon{font-size:38px;
+text-align: center;
+}
+
+.weather-forecast-temperature{padding: 0 10px;}
+
+.weather-forecast-date{margin-bottom: 10px;}
+
+.weather-forecast{display: flex;
+justify-content: space-around;}
+
+.weather-forecast-day{text-align: center;
+line-height: 40px;}
