@@ -13,6 +13,7 @@ function displayTemperature(response)
     humidityElement.innerHTML= `${response.data.temperature.humidity}%`;
     icon.innerHTML=`<img src="${response.data.condition.icon_url}" class="emoji"/>`;
     
+    getForecast(response.data.city);
 }
 
 function searchCity(city) {
@@ -21,7 +22,15 @@ function searchCity(city) {
     axios.get(apiUrl).then(displayTemperature);
 }
 
-function displayForecast(){
+
+
+function getForecast(city){
+    let apiKey="8c3t8b68c39aceaa7e74616od00b0ef1"
+    let apiUrl=`https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apikey}&units=metric`
+    axios.get(apiUrl).then(displayForecast)
+}
+
+function displayForecast(response){
     let forecastElement = document.querySelector("#weather-forecast");
 
 let days =["Tue" , "Wed" ,"Thurs", "Fri", "Sat"];
