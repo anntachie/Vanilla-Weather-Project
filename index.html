@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/style.css">
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
  <div class="app">
     <header>
-    <form>
-    <input type="text" placeholder="Enter a city..." required class="search-form-input">
+    <form id = "search-form">
+    <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-input">
     <input type="submit" value="Search" class="search-form-button">
 </form>
 </header>
@@ -22,17 +22,19 @@
 <section>
     <div class="container">
         <div class="city">
-            <h1>Paris</h1>
-            <div class="forecast"> <span id="current-date">Thursday 6:08,</span> clear sky <br>
+            <h1 class="current-city" id="current-city">Paris </h1>
+            <div class="forecast"> <span class="day" id="current-date">Thursday 6:08,</span> clear sky <br>
             Humidity: <strong>39%</strong>, Wind:<strong> 4.63km/h</strong></div>
         </div>
-        <div class="temperature"><span class="emoji">☀️</span>26<span class="celsius">ºC</span> </div>
+        <div class="temperature"><span class="emoji">☀️</span><span class="degree" id="current-temperature">26</span><span class="celsius">ºC</span> </div>
     </div>
 </section>
 </div>
 
     <footer> Coded by <a href="https://github.com/anntachie" target="_blank">Ann, </a> is <a href="https://github.com/" target="_blank">open-sourced on Github</a> and <a href="https://www.netlify.com/" target="_blank">hosted on Netlify</a></footer>
-    <link rel="stylesheet" href="src/index.js">
+    
 </div>
+
+<script src="src/index.js"></script>
 </body>
 </html>

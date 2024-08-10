@@ -44,7 +44,7 @@ padding-bottom: 40px;
 
 }
 
-input[type=text]{font-size: 20px;
+input[type=search]{font-size: 20px;
 border-radius:8px ;
 padding: 20px;
 width:490px;
@@ -52,7 +52,11 @@ margin-right: 12px;
 margin-bottom: 20px;
 background:#F9F7FE ;
 border: 1px solid whitesmoke;
-box-shadow: 2px 2px 2px whitesmoke;}
+box-shadow: 2px 2px 2px whitesmoke;
+font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
 
 
 input[type=submit]
@@ -63,7 +67,11 @@ width:170px;
 background:#885DF1;
 color: whitesmoke;
 border: 1px solid whitesmoke;
-box-shadow: 2px 2px 2px whitesmoke;}
+box-shadow: 2px 2px 2px whitesmoke;
+font-family: "Roboto Slab", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
 
 footer{margin-top: 40px;
 font-size: 18px;
