@@ -93,13 +93,17 @@ text-align: center;
 color: #F65282;
 margin-top: 25px;}
 
-.weather-forecast-icon{font-size:38px;
+.weather-forecast-icon{
 text-align: center;
 }
 
 .weather-forecast-temperature{padding: 0 10px;}
 
-.weather-forecast-date{margin-bottom: 10px;}
+.weather-forecast-date{margin-bottom: 10px;
+line-height: 20px;
+font-size: 16px;
+color: rgba(39,33,66,0.4);
+text-align: center;}
 
 .weather-forecast{display: flex;
 justify-content: space-around;}
